@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gradient Aerospace</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
     <style>
         /* --- CSS STYLES --- */
 
@@ -18,11 +27,7 @@
             line-height: 1.6;
             color: #0c0a00;
 
-            /* --- BACKGROUND IMAGE SETTINGS --- */
-            /* 1. We use a linear-gradient to add a 50% black tint over the image.
-            2. Replace 'background.jpg' with the actual filename of your image.
-            */
-            background-image: url('DSC04758-1.jpeg');
+            background-image: url('img/background.jpeg');
 
             /* This ensures the image covers the whole screen */
             background-size: cover;
@@ -41,30 +46,27 @@
 
         .card {
             background: #ffffff;
-            /* background: rgba(0, 0, 0, 0.25); */
             width: 100%;
             max-width: 700px;
             padding: 40px;
             border-radius: 12px;
             /* Increased shadow slightly to lift it off the photo background */
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            /* box-shadow: 0 0px 100px rgba(255,255,255,0.75); */
-            /* border-top: 5px solid #5a5b5d; */
             border-top: 6px solid #e1af09;
             border-bottom: 6px solid #e1af09;
         }
 
         h1 {
-            font-family: "DM Serif Display";
+            font-family: "DM Serif Display", serif;
+            font-style: normal;
+            font-weight: 400;
             font-size: 2.5rem;
-            color: #0c0a00; /* slate: 2c3e50 */
-            /* margin-bottom: 1.5rem; */
-            /* font-weight: 700; */
+            color: #0c0a00;
         }
 
         h2 {
             font-size: 1.25rem;
-            color: #0c0a00; /* slate: 2c3e50 */
+            color: #0c0a00;
             margin-bottom: 1.5rem;
             font-weight: 700;
         }
@@ -127,7 +129,6 @@
             text-decoration: none;
             border-radius: 4px;
             font-weight: 600;
-            /* transition: background-color 0.2s; */
         }
 
         .cta-button:hover {
@@ -143,11 +144,10 @@
             }
         }
     </style>
-    <link rel="icon" type="image/png" href="favicon.png">
+
 </head>
 <body>
 
-    <!-- <h1>Gradient Aerospace</h1> -->
     <div class="card">
 
         <h1>Gradient Aerospace</h1>
@@ -177,7 +177,7 @@
         <div class="cta-section">
             <p>If you're ready to go vertical on your GNC+sim stack, we'd like to hear from you.</p>
             <div class="cta-button-positioning">
-                <a href="mailto:contact@yourbusiness.com" class="cta-button">Contact Us</a>
+                <a href="mailto:hi@gradient.team" class="cta-button">Contact Us</a>
             </div>
         </div>
 
