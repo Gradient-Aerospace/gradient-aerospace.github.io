@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Aerospace</title>
+    <style>
+        /* --- CSS STYLES --- */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #0c0a00;
+
+            /* --- BACKGROUND IMAGE SETTINGS --- */
+            /* 1. We use a linear-gradient to add a 50% black tint over the image.
+            2. Replace 'background.jpg' with the actual filename of your image.
+            */
+            background-image: url('DSC04758-1.jpeg');
+
+            /* This ensures the image covers the whole screen */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            /* This keeps the image still while you scroll */
+            background-attachment: fixed;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            /* background: rgba(0, 0, 0, 0.25); */
+            width: 100%;
+            max-width: 700px;
+            padding: 40px;
+            border-radius: 12px;
+            /* Increased shadow slightly to lift it off the photo background */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            /* box-shadow: 0 0px 100px rgba(255,255,255,0.75); */
+            /* border-top: 5px solid #5a5b5d; */
+            border-top: 6px solid #e1af09;
+            border-bottom: 6px solid #e1af09;
+        }
+
+        h1 {
+            font-family: "DM Serif Display";
+            font-size: 2.5rem;
+            color: #0c0a00; /* slate: 2c3e50 */
+            /* margin-bottom: 1.5rem; */
+            /* font-weight: 700; */
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: #0c0a00; /* slate: 2c3e50 */
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: #0c0a00;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #3c3c3c;
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #0c0a00;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #e1af09;
+            font-weight: bold;
+        }
+
+        strong {
+            color: #0c0a00;
+        }
+
+        .cta-section {
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #0c0a00;
+        }
+
+        .cta-button-positioning {
+            text-align: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #e1af09;
+            color: #0c0a00;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            /* transition: background-color 0.2s; */
+        }
+
+        .cta-button:hover {
+            background-color: #d1a208;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+    <!-- <h1>Gradient Aerospace</h1> -->
+    <div class="card">
+
+        <h1>Gradient Aerospace</h1>
+
+        <h2>A GNC+Sim Foundation for Engineering Independence.</h2>
+
+        <p>
+            We offer a specialized kickstart for companies looking to get vehicles off the ground and scale their engineering process. We lay the foundation for simulation-forward design, implementing the necessary models and algorithms to create a robust internal capability.
+        </p>
+
+        <h3>The Gradient Package</h3>
+        <ul>
+            <li>
+                <strong>Custom Architecture:</strong> Elegant layout, flexible models, and precise navigation and control algorithms
+            </li>
+            <li>
+                <strong>Embedded Integration:</strong> GNC software tied directly into the client's embedded software and hardware
+            </li>
+            <li>
+                <strong>Process Integration:</strong> A sim that works from the early design stage to the maintenance stage years down the line
+            </li>
+            <li>
+                <strong>Full Ownership:</strong> A powerful, fast system designed for total internal control and iteration, eliminating long-term dependence on outside products or parties
+            </li>
+        </ul>
+
+        <div class="cta-section">
+            <p>If you're ready to go vertical on your GNC+sim stack, we'd like to hear from you.</p>
+            <div class="cta-button-positioning">
+                <a href="mailto:contact@yourbusiness.com" class="cta-button">Contact Us</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
